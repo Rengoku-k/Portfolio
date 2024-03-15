@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo"><span>AY</span></div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#" style="border-radius: 0.5rem;" onclick="showSection('profile')">Home</a></li>
+            <li><a href="#" style="border-radius: 0.5rem;" onclick="showSection('about')">About</a></li>
+            <li><a href="#" style="border-radius: 0.5rem;" onclick="showSection('experience')">Skills</a></li>
+            <li><a href="#" style="border-radius: 0.5rem;" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" style="border-radius: 0.5rem;" onclick="showSection('contact')">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Yeswanth Adduru</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#" onclick="showSection('profile')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('experience')">Skills</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img style="border-radius: 50%;" src="./assets/Yash.jpg" alt="Yeswanth Adduru profile picture" />
+        </div>
+        <div class="frame">
+          <div class="circle"></div>
+          <div class="line left"></div>
+          <div class="line right"></div>
+          <div class="small top">Hello, I'm</div>
+          <div class="big">Yeswanth Adduru</div>
+          <div class="small bottom">Java Full Stack Developer
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/resume.pdf')"
+              >
+                Download CV
+              </button>
+              <button class="btn btn-color-1" onclick="showSection('contact')">
+                Contact Info
+              </button>
+            </div>
+            <div id="socials-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon icon-profile"
+                onclick="location.href='https://www.linkedin.com/in/yeswanthay/'"
+              />
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon icon-profile"
+                onclick="location.href='https://github.com/Rengoku-k?tab=repositories'"
+              />
+            </div></div>
+          <div class="hide top"></div>
+          <div class="hide bottom"></div>
+        </div>
+      </section>
+      <section id="about" style="display: none;">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <br>
+        <br>
+        <br>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <div class="card">
+              <div class="piccircle"></div>
+              <div class="piccircle"></div>
+              <div class="card-inner"><img
+                src="./assets/Yash2.jpg"
+                alt="Profile picture"
+                class="about-pic"
+              /></div>
+          </div>
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container2">
+                <div class="about-card">
+                  <div class="content">
+                    <div class="back">
+                      <div class="back-content">
+                        <img
+                        src="./assets/experience.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <h3>Experience</h3>
+                      <p> <img style="height:3rem"
+                        src="./assets/warranty.png"
+                        alt="3"
+                        class="icon"
+                      /> <br />Full Stack Development</p>
+                      </div>
+                    </div>
+                    <div class="front">
+                      
+                      <div class="img">
+                        <div class="about-circle">
+                        </div>
+                        <div class="about-circle" id="right">
+                        </div>
+                        <div class="about-circle" id="bottom">
+                        </div>
+                      </div>
+                
+                      <div class="front-content">
+                        <h4>NEWGEN SOFTWARE</h4>
+     <br><br>                   <h4>INFOSYS LTD</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="details-container2">
+                <div class="about-card">
+                  <div class="content">
+                    <div class="back">
+                      <div class="back-content">
+                        <img
+                        src="./assets/education.png"
+                        alt="Education icon"
+                        class="icon"
+                      />
+                      <h3>Education</h3>
+                      <p>Masters Degree<br />Bachelors Degree</p>
+                      </div>
+                    </div>
+                    <div class="front">
+                      
+                      <div class="img">
+                        <div class="about-circle">
+                        </div>
+                        <div class="about-circle" id="right">
+                        </div>
+                        <div class="about-circle" id="bottom">
+                        </div>
+                      </div>
+                
+                      <div class="front-content">
+                        <h5>MS-INFORMATION TECHNOLOGY <br> UNC CHARLOTTE</h5>
+                        <br><br>
+                        <h5>BTech-ELECTRICAL ENGNEERING<br> SASTRA</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="details-container2">
+                <div class="about-card">
+                  <div class="content">
+                    <div class="back">
+                      <div class="back-content">
+                        <img
+                        src="./assets/skills.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <h3>Primary Skills</h3>
+                      <p>springboot<br />Angular</p>
+                      </div>
+                    </div>
+                    <div class="front">
+                      
+                      <div class="img">
+                        <div class="about-circle">
+                        </div>
+                        <div class="about-circle" id="right">
+                        </div>
+                        <div class="about-circle" id="bottom">
+                        </div>
+                      </div>
+                
+                      <div class="front-content">
+                        <h3>Domain knowledge</h3><br>
+                      <h3>IOT</h3><h3>Aerospace</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            <hr class="rounded">
+
+            <p class="interest__text__p1">Interests</p>
+            <div class=".interests-details-container">
+              <div class="about-containers">
+                  
+                    
+                    <div style="padding: 0;" class="details-container">
+                      <img style="margin-top: 0.75rem;"
+                        src="./assets/world-wide-web.png"
+                        alt="Skills icon"
+                        class="icon"/>
+                      <h4 class="interest-sub-title">Web Development</h4>
+                      
+                    </div>
+                    <div style="padding: 0;" class="details-container">
+                      <img style="margin-top: 0.75rem;"
+                        src="./assets/ui-design.png"
+                        alt="Skills icon"
+                        class="icon"/>
+                      <h4 class="interest-sub-title">UI Designing</h4>
+                      
+                    </div>
+                    <div style="padding: 0;" class="details-container">
+                      <img style="margin-top: 0.75rem;"
+                        src="./assets/api.png"
+                        alt="Skills icon"
+                        class="icon"/>
+                      <h4 class="interest-sub-title">API Development</h4>
+                     
+                    </div>
+                    <div style="padding: 0;" class="details-container">
+                      <img style="margin-top: 0.75rem;"
+                        src="./assets/coding.png"
+                        alt="Skills icon"
+                        class="icon"/>
+                      <h4 class="interest-sub-title">Competitive Coding</h4>
+                      
+                    </div>
+              </div>
+            
+            </div>
+            <div class="text-container">
+              <p class="summary">
+                  With over 3.5 years of experience as a Java Full Stack Developer, I specialize in SDLC methodologies, particularly Agile and Waterfall, to develop and
+                  maintain robust Java applications using Java 8, Spring MVC, Hibernate, and Spring Boot. My expertise extends to crafting dynamic, responsive frontends
+                  using Angular, and Bootstrap, and managing complex SQL and NoSQL databases. I am proficient in deploying applications on servers like
+                  Apache Tomcat, AWS, and Azure, and excel in using tools like UML, Maven, and Jenkins for efficient project development and testing.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section id="experience" style="display: none;">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+              
+                
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Frontend Development</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/angular.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                          <h3>Angular</h3>
+                          <p>Experienced</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/js.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>JavaScript</h3>
+                          <p>Experienced</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/html.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                      <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/css.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/bootstrap.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Bootstrap</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/expressjs.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Express JS</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/typescript.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>TypeScript</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/jquery.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>JQuery</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Backend Development</h2>
+                  <div class="article-container">
+                      <article>
+                          <img
+                            src="./assets/springboot.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Spring Boot</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>  
+                        <article>
+                          <img
+                            src="./assets/mvc.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Spring MVC</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>  
+                        <article>
+                          <img
+                            src="./assets/jpa.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Spring JPA</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>   
+                        <article>
+                          <img
+                            src="./assets/springsecurity.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Spring Security</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>   
+                        <article>
+                          <img
+                            src="./assets/hibernate.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Hibernate</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>         
+                      <article>
+                      <img
+                        src="./assets/mongo.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>MongoDB</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/mysql.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>My SQL</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/servlets.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Servlets</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Programming Languages</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/java.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                          <h3>Java</h3>
+                          <p>Experienced</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/python.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Python</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                  
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Tools</h2>
+                  <div class="article-container">
+                      <article>
+                          <img
+                            src="./assets/eclipse.webp"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Eclipse</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>  
+                        <article>
+                          <img
+                            src="./assets/vscode.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Visual Studio Code</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>  
+                        <article>
+                          <img
+                            src="./assets/jupyter.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Jupyter Notebook</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>   
+                        <article>
+                          <img
+                            src="./assets/git.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <div>
+                            <h3>Github</h3>
+                            <p>Experienced</p>
+                          </div>
+                        </article>   
+                        
+                  </div>
+                </div>
+          </div>
+        
+        </div>
+        
+      </section>
+      <section id="projects" style="display: none;">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section id="contact" style="display: none;">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:yeswanthadduru@gmail.com">yeswanthadduru@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/yeswanthay/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <footer >
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+      <p class="footp">Copyright &#169; 2024 Yeswanth Adduru. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
