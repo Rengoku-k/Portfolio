@@ -453,8 +453,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 300px;
+  height: 300px;
 }
 
 .project-title {
@@ -465,6 +465,13 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.project-sub-title {
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 /* CONTACT */
